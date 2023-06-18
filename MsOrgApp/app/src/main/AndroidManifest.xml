@@ -125,7 +125,7 @@
 
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-2627695336411451~9669306614" />
+            android:value="--------" />
     </application>
 
 </manifest>
