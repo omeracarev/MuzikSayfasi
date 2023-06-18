@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navsave"
+        android:icon="@drawable/ic_savepro"
+        android:title="Değişiklikleri Kaydet" />
+
+    <item
+        android:id="@+id/navmainpage"
+        android:icon="@drawable/ic_returnmain"
+        android:title="Ana Ekrana Dön" />
+
+    <item
+        android:id="@+id/navexit"
+        android:icon="@drawable/ic_exitprof"
+        android:title="Çıkış Yap" />
+
+    <item
+        android:id="@+id/navdelete"
+        android:icon="@drawable/ic_deleteprof"
+        android:title="Profili Sil" />
+</menu>

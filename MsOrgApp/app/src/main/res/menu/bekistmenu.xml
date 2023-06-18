@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/bekistok"
+        android:icon="@drawable/ic_okfriend"
+        android:title="Kabul Et" />
+
+    <item
+        android:id="@+id/gorbekist"
+        android:icon="@drawable/ic_gorunico"
+        android:title="Görüntüle" />
+
+    <item
+        android:id="@+id/gorbekred"
+        android:icon="@drawable/ic_useremove"
+        android:title="Reddet" />
+
+
+</menu>

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="5dp"
+
+    android:background="@drawable/gamebackgr_9"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="20"
+        android:id="@+id/createmsanalay"
+        android:background="#92000000">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:weightSum="20"
+            android:layout_weight="2">
+
+            <ImageView
+                android:id="@+id/personic"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2.5"
+                android:src="@drawable/ic_person_pin"/>
+
+            <TextView
+                android:id="@+id/kaygirtex"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="16"
+                android:text="Profİl Oluştur"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:fontFamily="@font/luckiest_guy"
+                android:textSize="30sp"
+                android:textColor="@color/white"/>
+
+            <ImageView
+                android:id="@+id/closegiric"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:src="@drawable/ic_close_x"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9"
+            android:weightSum="10"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4"
+                android:weightSum="10"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:padding="5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/addphoto"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_addphoto"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:textCursorDrawable="@null"
+                        android:backgroundTint="@color/msdef"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:id="@+id/kuledtex"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/raleway_medium"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:inputType="text"
+                        android:hint="Kullanıcı Adı Girin..."/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="6"
+                android:weightSum="2"
+                android:orientation="vertical">
+
+                <EditText
+                    android:textCursorDrawable="@null"
+                    android:backgroundTint="@color/msdef"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:id="@+id/sifedtex"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:inputType="textPassword"
+                    android:hint="Şifrenizi Oluşturun..."
+                    android:layout_weight="1"/>
+
+                <EditText
+                    android:textCursorDrawable="@null"
+                    android:backgroundTint="@color/msdef"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:id="@+id/emedtex"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:gravity="center"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/white"
+                    android:hint="E-Mail Adresinizi Girin..."
+                    android:layout_weight="1">
+
+                </EditText>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/pinlisana"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:text="İlgİlendİğİn En Az 3 sanatçı seç! "
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:fontFamily="@font/luckiest_guy"
+            android:textSize="20sp"
+            android:textColor="@color/white"/>
+
+        <HorizontalScrollView
+            android:id="@+id/hormsprof"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5.5"
+            tools:ignore="SpeakableTextPresentCheck">
+
+            <LinearLayout
+                android:id="@+id/horiclay"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:cardCornerRadius="10dp"
+            app:cardUseCompatPadding="true"
+            android:layout_weight="2">
+
+            <TextView
+                android:id="@+id/createprobut"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/tumsanatcilarbackground"
+                android:text="Oluştur!"
+                android:gravity="center"
+                android:textSize="25sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/luckiest_guy"/>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+        <!-- Tasarımına yoğunlaş -->
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/anapinlay"
+    android:weightSum="10"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/anasanimg"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="6" />
+
+    <TextView
+        android:id="@+id/anasantex"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:fontFamily="@font/raleway_medium"
+        android:textSize="15sp"
+        android:text="Sanatçı Adı"
+        android:letterSpacing="0.01"/>
+
+
+
+</LinearLayout>

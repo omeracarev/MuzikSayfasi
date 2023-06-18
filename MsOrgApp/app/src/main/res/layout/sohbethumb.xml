@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:weightSum="20"
+    android:padding="5dp"
+    android:background="@drawable/girbutbg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_weight="4"
+        android:src="@drawable/ic_person_pin"
+        android:id="@+id/userthumb"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_weight="10"
+        android:orientation="vertical"
+        android:weightSum="7">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4">
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/kulnamebas"
+                android:text=" Kullanıcı Adı"
+                android:textSize="20sp"
+                android:tag="@string/bastex"
+                android:textColor="@color/white"
+                android:fontFamily="@font/raleway_semibold"
+                android:gravity="center|start"/>
+
+        </HorizontalScrollView>
+
+
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/kulmesbas"
+                android:tag="@string/bastex"
+                android:text=" Gelen Mesaj Önizlemesi"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/raleway_medium_italic"
+                android:gravity="center|start"/>
+
+        </HorizontalScrollView>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_weight="6"
+        android:weightSum="10"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:tag="@string/bastex"
+            android:layout_weight="4"
+            android:id="@+id/saathumb"
+            android:text="12:54"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/raleway_semibold"
+            android:gravity="center"/>
+
+        <TextView
+            android:tag="@string/bastex"
+            android:layout_width="35dp"
+            android:layout_gravity="center"
+            android:layout_height="0dp"
+            android:layout_weight="6"
+            android:background="@drawable/ic_chat"
+            android:backgroundTint="#FF6D00"
+            android:id="@+id/newmesay"
+            android:text="+6"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/luckiest_guy"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

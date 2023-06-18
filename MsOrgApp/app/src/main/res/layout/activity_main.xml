@@ -1,0 +1,632 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="20"
+    android:padding="2dp"
+    android:background="#C6000000"
+    android:id="@+id/mainact"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.75"
+        android:weightSum="10"
+        android:padding="3dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/hosgeltext"
+            android:layout_width="0dp"
+            android:tag="@string/bastex"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:gravity="center_vertical"
+            android:text="@string/muzikligunler"
+            android:paddingLeft="4dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/raleway_medium"
+            android:textSize="25sp"
+            android:orientation="horizontal">
+
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/mainprofim"
+            android:src="@drawable/ic_mainpro"/>
+
+        <ImageView
+            android:id="@+id/mainsearch"
+            android:layout_margin="2dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_searching"/>
+
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="18.25"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <LinearLayout
+            android:id="@+id/scrollmain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:weightSum="11.5"
+                android:id="@+id/kesfetlay"
+                android:background="@drawable/transparentshape"
+                android:layout_height="200dp">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="11.5"
+                    tools:ignore="SpeakableTextPresentCheck">
+
+                    <LinearLayout
+                        android:layout_margin="8dp"
+                        android:id="@+id/keshoriclay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:background="@drawable/transparentshape"
+                            android:layout_marginRight="10dp"
+                            android:layout_width="160dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:weightSum="10">
+
+                            <ImageView
+                                android:id="@+id/kesim1"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="4.25"
+                                android:src="@drawable/ic_addfriend"/>
+
+                            <TextView
+                                android:tag="@string/bastex"
+                                android:id="@+id/kesprobas1"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="2.75"
+                                android:textColor="@color/white"
+                                android:gravity="center"
+                                android:text="@string/profilolustur"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/raleway_medium"/>
+
+                            <TextView
+                                android:tag="@string/bastex"
+                                android:id="@+id/kesproac1"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="3"
+                                android:textColor="@color/white"
+                                android:gravity="center"
+                                android:padding="3dp"
+                                android:text="@string/proac1"
+                                android:textSize="9sp"
+                                android:fontFamily="@font/raleway_medium_italic"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/transparentshape"
+                            android:layout_width="160dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:weightSum="10">
+
+                            <ImageView
+                                android:id="@+id/kesim3"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="4.25"
+                                android:src="@drawable/ic_favfillwhite"/>
+
+                            <TextView
+                                android:tag="@string/bastex"
+                                android:id="@+id/kesprobas3"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="2.75"
+                                android:textColor="@color/white"
+                                android:gravity="center"
+                                android:text="@string/favoriyeal"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/raleway_medium"/>
+
+                            <TextView
+                                android:tag="@string/bastex"
+                                android:id="@+id/kesproac3"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="3"
+                                android:textColor="@color/white"
+                                android:gravity="center"
+                                android:padding="3dp"
+                                android:text="@string/proac3"
+                                android:textSize="9sp"
+                                android:fontFamily="@font/raleway_medium_italic"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:background="@drawable/transparentshape"
+                            android:layout_width="160dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="10dp"
+                            android:orientation="vertical"
+                            android:weightSum="10">
+
+                            <ImageView
+                                android:id="@+id/kesim4"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="4.25"
+                                android:src="@drawable/ic_kesifwhite"/>
+
+                            <TextView
+                                android:tag="@string/bastex"
+                                android:id="@+id/kesprobas4"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="2.75"
+                                android:textColor="@color/white"
+                                android:gravity="center"
+                                android:text="@string/oyunoyna"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/raleway_medium"/>
+
+                            <TextView
+                                android:tag="@string/bastex"
+                                android:id="@+id/kesproac4"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="3"
+                                android:textColor="@color/white"
+                                android:gravity="center"
+                                android:padding="3dp"
+                                android:text="@string/proac4"
+                                android:textSize="9sp"
+                                android:fontFamily="@font/raleway_medium_italic"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:background="@drawable/transparentshape"
+                            android:layout_width="160dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="10dp"
+                            android:orientation="vertical"
+                            android:weightSum="10">
+
+                            <ImageView
+                                android:id="@+id/kesim5"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="4.25"
+                                android:src="@drawable/ic_musicsheet"/>
+
+                            <TextView
+                                android:id="@+id/kesprobas5"
+                                android:tag="@string/bastex"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="2.75"
+                                android:textColor="@color/white"
+                                android:gravity="center"
+                                android:text="@string/calismadefteri"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/raleway_medium"/>
+
+                            <TextView
+                                android:tag="@string/bastex"
+                                android:id="@+id/kesproac5"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="3"
+                                android:textColor="@color/white"
+                                android:gravity="center"
+                                android:padding="3dp"
+                                android:text="@string/proac5"
+                                android:textSize="9sp"
+                                android:fontFamily="@font/raleway_medium_italic"/>
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@drawable/transparentshape"
+                android:id="@+id/oyunlay"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="vertical"
+                android:weightSum="13">
+
+                    <LinearLayout
+                        android:id="@+id/oyunlaysa"
+                        android:layout_weight="1.8"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:weightSum="20"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:tag="@string/basimg"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:src="@drawable/ic_kesifwhite"/>
+
+                        <TextView
+                            android:tag="@string/bastex"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="5.5"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/raleway_semibold"
+                            android:id="@+id/oyunbastexo"
+                            android:textSize="18sp"
+                            android:text="@string/oyunlar"/>
+
+                        <ImageView
+                            android:tag="@string/basimg"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.50"
+                            android:src="@drawable/ic_scoreboard"
+                            android:id="@+id/coinimg"/>
+
+                        <HorizontalScrollView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4.5">
+
+                            <TextView
+                                android:layout_gravity="center"
+                                android:id="@+id/cointext"
+                                android:tag="@string/bastex"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="Skor Tablosu"
+                                android:fontFamily="@font/raleway_medium"
+                                android:textColor="@color/white"
+                                />
+
+                        </HorizontalScrollView>
+
+                        <ImageView
+                            android:tag="@string/basimg"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.50"
+                            android:src="@drawable/ic_gemheart"
+                            android:id="@+id/gemheartimg"/>
+
+                        <HorizontalScrollView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3.5">
+
+                        <TextView
+                            android:layout_gravity="center"
+                            android:id="@+id/hearttext"
+                            android:tag="@string/bastex"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:fontFamily="@font/raleway_medium"
+                            android:textColor="@color/white"
+                            />
+
+                        </HorizontalScrollView>
+
+                            <ImageView
+                                android:layout_gravity="center"
+                                android:tag="@string/basimg"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.50"
+                                android:src="@drawable/ic_market"
+                                android:id="@+id/marketimg"/>
+
+
+                    </LinearLayout>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="11.2"
+                    tools:ignore="SpeakableTextPresentCheck">
+
+                    <LinearLayout
+                        android:id="@+id/oyunlino"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:weightSum="13"
+                android:id="@+id/onecikanlarlay"
+                android:background="@drawable/transparentshape"
+                android:layout_height="200dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.5"
+                    android:orientation="horizontal"
+                    android:weightSum="20">
+
+                    <ImageView
+                        android:tag="@string/basimg"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:id="@+id/imoncik"
+                        android:src="@drawable/ic_widmenu"/>
+
+                    <TextView
+                        android:tag="@string/bastex"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="18"
+                        android:gravity="center_vertical"
+                        android:text="@string/onecikanlar"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/raleway_semibold"
+                        android:textSize="20sp"
+                        android:id="@+id/onceciktex"/>
+
+
+                </LinearLayout>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="11.5"
+                    tools:ignore="SpeakableTextPresentCheck">
+
+                    <LinearLayout
+                        android:id="@+id/onhoriclay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:weightSum="13"
+                android:id="@+id/kolaysarkilarlay"
+                android:background="@drawable/transparentshape"
+                android:layout_height="200dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.5"
+                    android:orientation="horizontal"
+                    android:weightSum="20">
+
+                    <ImageView
+                        android:tag="@string/basimg"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:id="@+id/imkolcik"
+                        android:src="@drawable/ic_widmenu"/>
+
+                    <TextView
+                        android:tag="@string/bastex"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="18"
+                        android:gravity="center_vertical"
+                        android:text="@string/kolaypiyano"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/raleway_semibold"
+                        android:textSize="20sp"
+                        android:id="@+id/kolpitex"/>
+
+
+                </LinearLayout>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="11.5"
+                    tools:ignore="SpeakableTextPresentCheck">
+
+                    <LinearLayout
+                        android:id="@+id/kolhoriclay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:weightSum="13"
+                android:id="@+id/tumsanlarlay"
+                android:background="@drawable/transparentshape"
+                android:layout_height="200dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.5"
+                    android:orientation="horizontal"
+                    android:weightSum="20">
+
+                    <ImageView
+                        android:tag="@string/basimg"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:id="@+id/imtumsanlar"
+                        android:src="@drawable/ic_widmenu"/>
+
+                    <TextView
+                        android:tag="@string/bastex"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="18"
+                        android:gravity="center_vertical"
+                        android:text="@string/tumsanatcilar"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/raleway_semibold"
+                        android:textSize="20sp"
+                        android:id="@+id/tumsanlartex"/>
+
+
+                </LinearLayout>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="11.5"
+                    tools:ignore="SpeakableTextPresentCheck">
+
+                    <LinearLayout
+                        android:id="@+id/tumsanlariclay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:weightSum="13"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:id="@+id/favsarklarlay"
+                android:background="@drawable/transparentshape"
+                android:layout_height="200dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.5"
+                    android:orientation="horizontal"
+                    android:weightSum="20">
+
+
+
+                    <ImageView
+                        android:tag="@string/basimg"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:id="@+id/imfavsarklar"
+                        android:src="@drawable/ic_favfillwhite"/>
+
+                    <TextView
+                        android:tag="@string/bastex"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="18"
+                        android:gravity="center_vertical"
+                        android:text="@string/favorilerim"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/raleway_semibold"
+                        android:textSize="20sp"
+                        android:id="@+id/favsarklartex"/>
+
+
+                </LinearLayout>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="11.5"
+                    tools:ignore="SpeakableTextPresentCheck">
+
+                    <LinearLayout
+                        android:id="@+id/favsarklariclay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+       <!-- <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView4"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.7"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-2627695336411451/9291948387">
+        </com.google.android.gms.ads.AdView>
+
+        -->

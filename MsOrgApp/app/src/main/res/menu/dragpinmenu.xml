@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/tasi"
+        android:icon="@drawable/ic_upcarry"
+        android:title="Üste Taşı" />
+    <item
+        android:id="@+id/kaldir"
+        android:icon="@drawable/ic_userengell"
+        android:title="Kaldır"/>
+</menu>

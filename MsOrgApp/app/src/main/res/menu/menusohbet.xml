@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/sarkipaylas"
+        android:icon="@drawable/ic_sharems"
+        android:title="Şarkı Paylaş"/>
+
+    <item
+        android:id="@+id/cleansoh"
+        android:icon="@drawable/ic_deleteprof"
+        android:title="Sohbeti Temizle" />
+
+    <item
+        android:id="@+id/gizlilik"
+        android:icon="@drawable/ic_protectms"
+        android:title="Gizlilik" />
+
+</menu>

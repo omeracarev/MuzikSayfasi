@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D00B0B0A"
+    android:weightSum="20"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:id="@+id/laygameover"
+    tools:context=".GameOver">
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/odulban"
+        android:background="@color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-2627695336411451/5239945708">
+    </com.google.android.gms.ads.AdView>
+
+    <LinearLayout
+        android:id="@+id/starslayodul"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_star_border"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_star_border"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_star_border"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_star_border"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_star_border"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/gamesontext"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:fontFamily="@font/miss_fajardose"
+        android:gravity="center"
+        android:text="Oyun Bitti!"
+        android:textColor="@color/white"
+        android:textSize="55sp" />
+
+
+    <TextView
+        android:id="@+id/gamesonpuansay"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:fontFamily="@font/raleway_semibold"
+        android:gravity="center"
+        android:text="1000"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp" />
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:cardCornerRadius="10dp"
+        app:cardUseCompatPadding="true"
+        android:layout_weight="2.5">
+
+        <LinearLayout
+            android:id="@+id/layexcan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="@drawable/canodulbg"
+            android:weightSum="20">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:src="@drawable/ic_gemheart"/>
+
+                <TextView
+                    android:id="@+id/extracantext"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="14"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/raleway_medium"
+                    android:text="+1 Extra Can Kazan!"
+                    android:textSize="20sp"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:src="@drawable/ic_double_tap"/>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_weight="2.5">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+
+            android:layout_height="match_parent"
+            app:cardCornerRadius="10dp"
+            app:cardUseCompatPadding="true"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:background="@drawable/custombutbg3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="20">
+
+                <ImageView
+                    android:id="@+id/tekrarimg"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6"
+                    android:src="@drawable/ic_replayic"/>
+
+                <TextView
+                    android:id="@+id/tekrartext"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="14"
+                    android:text="Tekrarla"
+                    android:gravity="center"
+                    android:fontFamily="@font/raleway_semibold"
+                    android:textColor="@color/white"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="10dp"
+            app:cardUseCompatPadding="true"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:background="@drawable/gozatbutbg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="20">
+
+                <ImageView
+                    android:id="@+id/listimg"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6"
+                    android:src="@drawable/ic_songlist"/>
+
+                <TextView
+                    android:id="@+id/listsec"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="14"
+                    android:text="Şarkı Seç"
+                    android:gravity="center"
+                    android:fontFamily="@font/raleway_semibold"
+                    android:textColor="@color/white"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/askphoto"
+        android:icon="@drawable/ic_takepho"
+        android:title="Fotoğraf Çek" />
+
+    <item
+        android:id="@+id/pickgallery"
+        android:icon="@drawable/ic_galpho"
+        android:title="Galeriden Seç" />
+</menu>

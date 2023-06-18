@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/gamebackgr_9"
+    android:layout_width="match_parent"
+    android:padding="5dp"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#A6000000"
+        android:weightSum="20">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:weightSum="20"
+            android:layout_weight="2">
+
+            <TextView
+                android:id="@+id/kaygirtexgir"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="18.5"
+                android:text="@string/poprogirisi"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:fontFamily="@font/luckiest_guy"
+                android:textSize="30sp"
+                android:textColor="@color/white"/>
+
+            <ImageView
+                android:id="@+id/closegirickay"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:src="@drawable/ic_close_x"/>
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6.5"
+            android:src="@drawable/ic_person_pin"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:weightSum="20"
+            android:orientation="horizontal">
+
+            <EditText
+                android:textCursorDrawable="@null"
+                android:backgroundTint="@color/msdef"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:id="@+id/kuledtexgir"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="17"
+                android:fontFamily="@font/raleway_medium"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:inputType="text"
+                android:hint="Kullanıcı Adı Girin..."/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:src="@drawable/ic_userkey"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:weightSum="20"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:src="@drawable/ic_userpass"/>
+
+
+            <EditText
+                android:textCursorDrawable="@null"
+                android:backgroundTint="@color/msdef"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:id="@+id/sifedtexgir"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:inputType="textPassword"
+                android:hint="Şifrenizi Girin..."
+                android:layout_weight="17">
+
+            </EditText>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:weightSum="20"
+            android:layout_weight="3.5">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/girisyapin"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="14"
+                android:text="Gİrİş Yap!"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:background="@color/tema4"
+                android:textSize="40sp"
+                android:fontFamily="@font/luckiest_guy"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sifunutlayo"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:weightSum="20"
+            android:layout_weight="2">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/sifunutun"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="16"
+                android:text="Şİfremİ unuttum!"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:background="@color/tema5"
+                android:textSize="20sp"
+                android:fontFamily="@font/luckiest_guy"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

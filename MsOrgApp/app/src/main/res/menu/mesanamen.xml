@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/mesamen1"
+        android:title="Ana Ekrana Dön"
+        android:icon="@drawable/ic_returnmain"
+        />
+    <item
+        android:id="@+id/mesamen2"
+        android:title="Profile Git"
+        android:icon="@drawable/ic_visibility"
+        />
+
+    <item
+        android:id="@+id/mesamen3"
+        android:title="Tüm Sohbetleri Temizle"
+        android:icon="@drawable/ic_deleteprof"
+        />
+
+    <item
+        android:id="@+id/mesamen4"
+        android:title="Tüm Bildirimleri Temizle"
+        android:icon="@drawable/ic_deleteprof"
+        />
+
+</menu>

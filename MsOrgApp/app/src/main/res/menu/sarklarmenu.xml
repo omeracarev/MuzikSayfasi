@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/act1"
+        android:title="Ana Menüye Dön"
+        />
+    <item
+        android:id="@+id/act2"
+        android:title="Hata Bildir"
+        />
+    <item
+        android:id="@+id/act3"
+        android:title="Hakkımızda"
+        />
+
+</menu>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:id="@+id/listedscoreid"
+    android:layout_width="match_parent"
+    android:background="@drawable/girbutbg"
+    android:weightSum="20"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_weight="4"
+        android:id="@+id/liscoreimg"
+        android:src="@drawable/mslogobuy"/>
+
+    <HorizontalScrollView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="13"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:weightSum="10"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="6"
+                android:id="@+id/scorelistad"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/raleway_semibold"
+                android:gravity="center_vertical"
+                android:text="Kullanıcı Adı"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="4"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_coin"
+                    android:id="@+id/listedscorecoinmg"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/luckiest_guy"
+                    android:gravity="center_vertical"
+                    android:id="@+id/listescoredpuantex"
+                    android:text="x10000000"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_weight="3"
+        android:id="@+id/odullisted"
+        android:src="@drawable/mslogobuy"/>
+
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/promes"
+        android:icon="@drawable/ic_konusico"
+        android:title="Sohbet Et" />
+
+    <item
+        android:id="@+id/progor"
+        android:icon="@drawable/ic_gorunico"
+        android:title="Görüntüle" />
+
+    <item
+        android:id="@+id/procikar"
+        android:icon="@drawable/ic_useremove"
+        android:title="Arkadaşlıktan Çıkar" />
+
+</menu>

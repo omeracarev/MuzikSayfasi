@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/gamebackgr_9"
+    android:weightSum="20"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:layout_weight="2">
+
+        <ImageView
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:src="@drawable/ic_scoreboard"/>
+
+        <TextView
+            android:tag="@string/bastex"
+            android:id="@+id/baslikskorpop"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:fontFamily="@font/luckiest_guy"
+            android:gravity="center"
+            android:text="Skorlar"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:id="@+id/closeskorpop"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:src="@drawable/ic_close_x"/>
+
+
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/scoreicboard"
+            android:orientation="horizontal">
+
+            <TextView
+                android:tag="@string/bastex"
+                android:id="@+id/lastweekbest"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text=" Bu Hafta "
+                android:gravity="center"
+                android:padding="10dp"
+                android:layout_margin="3dp"
+                android:fontFamily="@font/raleway_medium"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:background="@drawable/girbutbg"/>
+
+            <TextView
+                android:tag="@string/bastex"
+                android:id="@+id/lastmonthbest"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text=" Bu Ay "
+                android:gravity="center"
+                android:padding="10dp"
+                android:layout_margin="3dp"
+                android:fontFamily="@font/raleway_medium"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:background="@drawable/girbutbg"/>
+
+            <TextView
+                android:tag="@string/bastex"
+                android:id="@+id/alltimesbest"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text=" Tüm Zamanlar "
+                android:gravity="center"
+                android:padding="10dp"
+                android:layout_margin="3dp"
+                android:fontFamily="@font/raleway_medium"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:background="@drawable/girbutbg"/>
+
+
+        </LinearLayout>
+
+
+
+
+    </HorizontalScrollView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="14"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/siraiclayo">
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <LinearLayout
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_coin"/>
+
+
+        <TextView
+            android:tag="@string/bastex"
+            android:id="@+id/totalpuan"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:gravity="center|start"
+            android:fontFamily="@font/raleway_medium"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:text=" x1000000"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_gemheart"/>
+
+
+        <TextView
+            android:tag="@string/bastex"
+            android:id="@+id/totalheart"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center|start"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:fontFamily="@font/raleway_medium"
+            android:text=" x1000"/>
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

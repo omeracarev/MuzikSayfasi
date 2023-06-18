@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/oysark1"
+        android:icon="@drawable/ic_cemadrian"
+        android:title="Cem Adrian - Kül" />
+
+
+    <item
+        android:id="@+id/oysark2"
+        android:icon="@drawable/ic_mangaaa"
+        android:title="maNga - Dünyanın Sonuna Doğmuşum" />
+
+    <item
+        android:id="@+id/oysark3"
+        android:icon="@drawable/ic_model"
+        android:title="Model - Pembe Mezarlık" />
+
+    <item
+        android:id="@+id/oysark4"
+        android:icon="@drawable/ic_farah"
+        android:title="Farah Zeynep Abdullah - Gel ya da Git" />
+
+    <item
+        android:id="@+id/oysark7"
+        android:icon="@drawable/ic_yzkon"
+        android:title="Yüzyüzeyken Konuşuruz - Dinle Beni Bi" />
+
+    <item
+        android:id="@+id/oysark10"
+        android:icon="@drawable/ic_sfbimage"
+        android:title="Son Feci Bisiklet - Bikinisinde Astronomi" />
+
+    <item
+        android:id="@+id/oysark5"
+        android:icon="@drawable/ic_dolkado"
+        android:title="Dolu Kadehi Ters Tut - Gitme" />
+
+    <item
+        android:id="@+id/oysark6"
+        android:icon="@drawable/ic_duman"
+        android:title="Duman - Senden Daha Güzel" />
+
+    <item
+        android:id="@+id/oysark8"
+        android:icon="@drawable/ic_madrigal"
+        android:title="Madrigal - Seni Dert Etmeler" />
+
+    <item
+        android:id="@+id/oysark9"
+        android:icon="@drawable/ic_cankazaz"
+        android:title="Can Kazaz - Bunca Yıl" />
+
+    <item
+        android:id="@+id/oysark11"
+        android:icon="@drawable/ic_duman"
+        android:title="Duman - Her Şeyi Yak" />
+</menu>

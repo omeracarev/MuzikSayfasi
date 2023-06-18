@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/gamebackgr_9"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="20"
+        android:background="#B7000000">
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/msban"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-2627695336411451/5609538457">
+        </com.google.android.gms.ads.AdView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:weightSum="20"
+            android:orientation="horizontal">
+
+            <SearchView
+                android:id="@+id/mainsearchview"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="18"
+                android:iconifiedByDefault="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:queryHint="@string/buradanara"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:src="@drawable/ic_close_x"
+                android:id="@+id/mscloseic"/>
+
+
+        </LinearLayout>
+
+
+        <ScrollView
+            android:id="@+id/detectScroll"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="16.5"
+            tools:ignore="SpeakableTextPresentCheck">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/msiclay"
+                android:orientation="vertical">
+
+               <ProgressBar
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/msicprog"
+                   android:secondaryProgressTint="@color/msdef"
+                   android:progressTint="@color/msdef"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

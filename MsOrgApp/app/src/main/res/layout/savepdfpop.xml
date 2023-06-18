@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:weightSum="20"
+    android:background="@drawable/tumsanatcilarbackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/savepdfbaslik"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:textSize="20sp"
+        android:text="Çalışmayı Kaydet"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:fontFamily="@font/raleway_semibold"
+        android:tag="@string/bastex"/>
+
+    <EditText
+        android:tag="@string/basedit"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/raleway_medium"
+        android:hint="Çalışmaya isim verin..."
+        android:gravity="center"
+        android:textColorHint="@color/browser_actions_bg_grey"
+        android:id="@+id/savedpdfet"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_okpop"
+            android:layout_weight="1"
+            android:id="@+id/savedpdfok"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_cancelpop"
+            android:layout_weight="1"
+            android:id="@+id/savedpdfno"/>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
