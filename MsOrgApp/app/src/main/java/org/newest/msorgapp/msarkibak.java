@@ -55,8 +55,8 @@ import java.util.Map;
 public class msarkibak extends YouTubeBaseActivity {
     YouTubePlayerView youTubePlayerView;
     Boolean kulgir = false;
-    private static final String URL = "https://www.xn--mziksayfas-9db95d.com/newnoti.php";
-    private static final String URLYOU = "AIzaSyAVas2Pz0ig-aB9ubdJsvw7oFZfn4hycL8";
+    private static final String URL = "-----";
+    private static final String URLYOU = "-------";
     int heighto,widtho;
     Boolean favcheck = false;
     Context context;
